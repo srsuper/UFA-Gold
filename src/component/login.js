@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Row, Container, Button, Card, Input, InputGroup, InputGroupAddon, InputGroupText, Label } from 'reactstrap';
+import { Col, Row, Container, Button, Card, Input, InputGroup, InputGroupAddon, InputGroupText, Label, CardImg } from 'reactstrap';
 import LoginCard from './logincard'
+import BannerF from '../img/banner-footer.jpg'
+import game1pix from '../img/game1.jpg'
+import game2pix from '../img/game2.jpg'
+import game3pix from '../img/game3.jpg'
 
 const Login = () => {
 
@@ -13,41 +17,35 @@ const Login = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{ backgroundColor: 'blue', height: '100%' }}>
-                        <Row style={{ flex: 'display', alignItems: 'center', justifyContent: 'center', backgroundColor: 'gold', height: '20vh' }}>
+                    <Col style={{ backgroundColor: 'black', height: '100%' }}>
+                        <Row style={{ flex: 'display', alignItems: 'center', justifyContent: 'center', backgroundColor: 'gold', height: '15vh' }}>
                             <Col xs="4" >
-                                <Card style={{ height: '13vh' }}>
-                                    <h1>
-                                        Game 1
-                                    </h1>
+                                <Card style={{ border: '1px solid #555' }}>
+                                    <CardImg src={game1pix}>
+                                    </CardImg>
                                 </Card>
                             </Col>
-                            <Col xs="4">
-                                <Card style={{ height: '13vh' }}>
-                                    <h1>
-                                        Game 2
-                                    </h1>
+                            <Col xs="4" >
+                                <Card style={{ border: '1px solid #555' }}>
+                                    <CardImg src={game2pix}>
+                                    </CardImg>
                                 </Card>
                             </Col>
-                            <Col xs="4">
-                                <Card style={{ height: '13vh' }}>
-                                    <h1>
-                                        Game 3
-                                    </h1>
+                            <Col xs="4" >
+                                <Card style={{ border: '1px solid #555' }}>
+                                    <CardImg src={game3pix}>
+                                    </CardImg>
                                 </Card>
                             </Col>
 
                         </Row>
-                        <Row >
-                            <Col sm="8" style={{ backgroundColor: 'brown' }}>
-                                <h1>
-                                    เนื้อหา
-                            </h1>
-                                <Card style={{ marginBottom: '10px' }}>
-                                    <h3 style={{ margin: '20px', marginBottom: '5px' }}>
+                        <Row style={{ justifyItems: 'center', flex: "display", flexWrap: 'wrap-reverse' }}>
+                            <Col sm="8" style={{ backgroundColor: 'black' }}>
+                                <Card style={{ border: '1px solid #555', marginTop: '10px', marginBottom: '10px', backgroundColor: '#141414' }}>
+                                    <span style={{ margin: '20px', marginBottom: '5px', fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>
                                         แทงบอลออนไลน์ UFABET ยูฟ่าเบท | UFABET.COM
-                                    </h3>
-                                    <Label style={{ margin: '20px' }}>
+                                    </span>
+                                    <Label style={{ margin: '20px', marginTop: '5px', color: 'whitesmoke' }}>
                                         ตัวแทนที่ได้รับสิขสิทธิ์อย่างเป็นทางการจาก UFABET ยูฟ่าเบท เว็บแทงบอลออนไลน์ ที่ได้มาตรฐานระดับโลกที่ดี
                                         ที่สุดในประเทศไทย ท่านสามารถเดิมพันกีฬาออนไลน์ แทงบอลออนไลน์ บอลสเต็ป บอลชุด<br /> บาคาร่า คาสิโนออนไลน์
                                     หวย มวย ได้ทุกชนิดโดยเปิดราคามากกว่าเจ้าอื่น สะดวกสบายยิ่งขึ้นสามารถวางเดิมพันได้ทุกที่ทุกเวลา
@@ -61,16 +59,17 @@ const Login = () => {
                                     ทุกท่านในการฝากถอนภายใน 5 นาที <br />
                                     </Label>
                                 </Card>
-                                <Card style={{ marginBottom: '10px', height: '18vh' }}>
-                                    <span>
+                                <Card style={{ border: '1px solid #555', marginBottom: '10px', height: '18vh', backgroundColor: '#141414' }}>
+                                    <span style={{ color: 'whitesmoke' }}>
                                         ขั้นตอน
                                     </span>
                                 </Card>
-                                <Card style={{ marginBottom: '10px' }}>
-                                    <h3 style={{ margin: '20px', marginBottom: '5px' }}>
+                                <Card style={{ border: '1px solid #555', marginBottom: '10px', backgroundColor: '#141414' }}>
+
+                                    <span style={{ margin: '20px', marginBottom: '5px', fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>
                                         UFABETCN.COM (UFABET) พนันและแทงบอลออนไลน์ที่ดีที่สุด
-                                    </h3>
-                                    <Label style={{ margin: '20px' }}>
+                                    </span>
+                                    <Label style={{ margin: '20px', marginTop: '5px', color: 'whitesmoke' }}>
                                         UFABET ในปัจจุบันนั้นเว็บพนันออนไลท์นั้นเกิดขึ้นอย่างแพร่หลาย และมีมากมายไห้ลูกค้าได้เลือกหาที่จะเล่นกัน แต่วันนี้เราจะมาแนะนำเว็บไซค์น้องใหม่ล่าสุดสดๆ ร้อนๆ นั้นก็คือ
                                         เว็บไซต์น้องใหม่มาแรงแซงทุกเว็บ ของยุคนี้ สีสันสดใส เข้าใจง่าย ตัวหนังสือชัดเจน รองรับหลายภาษา รวมถึงภาษาไทย เรียบง่ายไม่ยุ่งยาก คัดสรรค์กีฬามามากมาย <br />
                                         <br />
@@ -79,10 +78,10 @@ const Login = () => {
                                         <br />
                                         การแทงบอลออนไลน์สามารถเลือกการแทงได้หลายแบบ เช่น การแทงแบบราคาแฮนดิแคป แทงสกอร์สูงต่ำ แทงจำนวนแตะมุม และการแทงใบเหลืองใบแดง สามาถเล่นบอลสดได้ตลอด 90 นาทีทำให้ลูกค้าได้รับความได้เปรียบในการแทงบอลออนไลน์เป็นอย่างมาก โดยที่ UFABET (ยูฟ่าเบท) ได้เปิดอัตราต่อรองทุกรูปแบบทุกราคาต่อรอง<br />
                                     </Label>
-                                    <h3 style={{ margin: '20px', marginBottom: '5px' }}>
+                                    <span style={{ margin: '20px', marginBottom: '5px', fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>
                                         สมัครยูฟ่าเบท พร้อมให้บริการ UFA เว็บพนันออนไลน์ 24 ชั่วโมง 365 วัน
-                                    </h3>
-                                    <Label style={{ margin: '20px' }}>
+                                    </span>
+                                    <Label style={{ margin: '20px', marginTop: '5px', color: 'whitesmoke' }}>
                                         ยูฟ่าเบท เว็บให้บริการพนันออนไลน์ ที่ได้รับการยอมรับจากทั่วโลก เราพร้อมให้บริการเว็บพนันออนไลน์ คุณสามารถสมัครยูฟ่าเบท เพื่อเข้าใช้บริการระบบต่างๆ อาทิเช่น บาคาร่ายูฟ่า และ ยูฟ่าสล็อต  คุณสามารถสมัครยูฟ่า กับทางทีมงาน UFA เว็บตรงไม่ผ่านเอเย่นต์ได้หลากหลายช่องทาง เช่น ทางหน้าเว็บไซต์ โดยกรอกรายละเอียดการสมัครด้วยตัวเอง<br />
                                         <br />
                                         เพื่อความสะดวกของและป้องกันปัญหาการใช้งาน เรายังมีช่องทางการเข้าใช้งาน UFA ที่คอยอัพเดท ทางเข้ายูฟ่าเบท ที่ช่วยให้สมาชิกที่สมัครเข้ามา สามารถเข้าเล่นได้ตลอด 24 ชั่วโมง 365 วัน โดยไม่ติดขัด ลิ้งเข้าเว็บไซต์ ufabet หลัก เช่น www.ufabet.com, www.betufa.com และ
@@ -91,22 +90,22 @@ const Login = () => {
                                         สมัคร ufabet ออนไลน์ กับเว็บไซต์ยอดนิยม เช่น ยูฟ่าเบท88888, ยูฟ่าเบท168, ยูฟ่าเบท365, ยูฟ่าเบท777, ยูฟ่า191 และ ยูฟ่า168
                                         หรือคุณสามารถ สมัครยูฟ่า เพื่อเล่น คาสิโนออนไลน์ บาคาร่า สล๊อต แทงบอลออนไลน์ หรือ กีฬาอื่นๆ www.ufabet.com เริ่มเดิมพัน พันออนไลน์ มั่นคงปลอดภัย<br />
                                     </Label>
-                                    <h3 style={{ margin: '20px', marginBottom: '5px' }}>
+                                    <span style={{ margin: '20px', marginBottom: '5px', fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>
                                         สมัครบาคาร่า 888 ufabet สมัครเว็บบาคาร่า 1688
-                                    </h3>
-                                    <Label style={{ margin: '20px' }}>
+                                    </span>
+                                    <Label style={{ margin: '20px', marginTop: '5px', color: 'whitesmoke' }}>
                                         สมัครบาคาร่า เกมส์คาสิโนออนไลน์ กับ ufabet.com เว็บคาสิโนยอดนิยมที่ได้รับการยอมรับจากทั่วโลก ถ้าคุณเคย สมัครเว็บบาคาร่า อื่นๆมาแล้ว อาทิเช่น สมัคร Gclub ก็ไม่ยากเลยที่จะลองมา สมัครเล่นบาคาร่า กับยูฟ่าเบท ซึ่งมีเกมส์ไพ่ในรูปแบบต่างๆให้ได้เลือกเล่นมากมาย เช่น Sexy Baccarat ซึ่งคนแจกไพ่จะแต่งตัวเซ็กซี่ และมีท่าเต้นที่สนุกสนานช่วยเพิ่มความเพลิดเพลินและเพิ่มสีสันในการเล่น<br />
                                         <br />
                                     </Label>
-                                    <h3 style={{ margin: '20px', marginBottom: '5px' }}>
+                                    <span style={{ margin: '20px', marginBottom: '5px', fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>
                                         สมัคร ufabet เว็บแทงบอล vip 888 โปรโมชั่น ดี คืนยอดเสีย ทุกเดือน
-                                    </h3>
-                                    <Label style={{ margin: '20px' }}>
+                                    </span>
+                                    <Label style={{ margin: '20px', marginTop: '5px', color: 'whitesmoke' }}>
                                         นอกจากนี้เว็บ ufabetcn ยังเป็นตัวแทนที่ได้รับการแต่งตั้งจาก UFABET เช่นเดียวกับเว็บอื่นๆในเครือเช่น UFABET365, UFA168, UFABET168, UFA1688, UFA888, UFA69, UFABET888, UFA678, UFABET777, UFABET888, UFA9999, UFA7777, UFA191 เป็นต้น เรามีโปรโมชั่น ufabet คืนยอดเสีย 5% ทุกวันที่ 1 ของทุกเดือน <br />
                                     </Label>
                                 </Card>
                             </Col>
-                            <Col xs="4" style={{ backgroundColor: 'crimson' }}>
+                            <Col >
                                 <LoginCard />
                             </Col>
                         </Row>
@@ -124,8 +123,8 @@ const Login = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{ backgroundColor: 'green' }}>
-                        <h1>Footer</h1>
+                    <Col style={{ backgroundImage: `url(${BannerF})`, minHeight: '6vh' }}>
+
                     </Col>
                 </Row>
             </Container >

@@ -6,8 +6,8 @@ const logincrad = () => {
 
     return (
         <div>
-            <Card style={{ alignItems: 'center', marginTop: '10px', marginBottom: '10px'}}>
-                <h1>LOGIN UFABET</h1>
+            <Card style={{ padding: '5px', backgroundColor: '#141414', border: '1px solid #555', justifyContent: 'center', alignItems: 'center', marginTop: '10px', marginBottom: '10px' }}>
+                <h1 style={{ color: 'whitesmoke' }}>LOGIN UFABET</h1>
                 <form style={{ marginBottom: "10px", marginTop: '10px' }} method="post" action="https://www.ufa6666.com/Default8.aspx?lang=EN-GB">
                     <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="btnLogin" ></input>
                     <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value></input>
@@ -30,7 +30,9 @@ const logincrad = () => {
                     </Card>
                 </form>
                 <Button color="success" style={{ width: "150px" }}>Add Friends</Button>
-                <span>PARTNER OF UFABET.COM</span>
+                <span style={{ color: 'whitesmoke' }}>
+                    PARTNER OF UFABET.COM
+                </span>
             </Card>
         </div>
     )
