@@ -6,6 +6,8 @@ import BannerHow from '../img/how.jpg'
 import game1pix from '../img/game1.jpg'
 import game2pix from '../img/game2.jpg'
 import game3pix from '../img/game3.jpg'
+import promotion from '../img/Promotion.jpg'
+import IconButton from '@material-ui/core/IconButton'
 
 const Login = () => {
 
@@ -13,47 +15,50 @@ const Login = () => {
         <div style={{ backgroundColor: 'black' }} >
             <Container fluid={true} style={{ maxWidth: '100vh' }}>
                 <Row style={{ backgroundColor: 'black', height: '23vh' }}>
-                    <Col style={{ backgroundColor: 'red' }}>
-                        <h1>Header</h1>
+                    <Col style={{ marginTop: '20px' }}>
+                        <h1 style={{ color: 'red' }}>Header</h1>
                     </Col>
                 </Row>
                 <Row>
                     <Col style={{ backgroundColor: 'black', height: '100%' }}>
-                        <Row style={{ backgroundColor: 'gold', paddingTop: '5px', paddingBottom: '5px', flex: 'display', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', }}>
+                        <Row style={{
+                            backgroundColor: 'gold',
+                            paddingTop: '5px',
+                            paddingBottom: '5px',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                        }}>
                             <Row style={{ width: '100%', backgroundColor: 'darkgoldenrod', flex: 'display', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', }}>
-                                <Card style={{ margin: '5px', border: '1px solid #555', minWidth: '12vh', width: '30%' }}>
-                                    <Button style={{ padding: '0px' }}>
+                                <Col md="4" style={{ padding: '0px' }}>
+                                    <IconButton style={{ padding: '0px', margin: '2px', border: '1px solid #555', maxWidth: '100%' }}>
                                         <CardImg onClick={() => {
                                             console.log('ClickFromIMGGame1');
                                         }} src={game1pix}>
                                         </CardImg>
-                                    </Button>
-                                </Card>
-
-                                <Card style={{ margin: '5px', border: '1px solid #555', minWidth: '12vh', width: '30%' }}>
-                                    <Button style={{ padding: '0px' }}>
+                                    </IconButton>
+                                </Col>
+                                <Col md="4" style={{ padding: '0px' }}>
+                                    <IconButton style={{ padding: '0px', margin: '2px', border: '1px solid #555', maxWidth: '100%' }}>
                                         <CardImg onClick={() => {
                                             console.log('ClickFromIMGGame2');
                                         }} src={game2pix}>
                                         </CardImg>
-                                    </Button>
-                                </Card>
-
-                                <Card style={{ margin: '5px', border: '1px solid #555', minWidth: '12vh', width: '30%' }}>
-                                    <Button style={{ padding: '0px' }}>
+                                    </IconButton>
+                                </Col>
+                                <Col md="4" style={{ padding: '0px' }}>
+                                    <IconButton style={{ padding: '0px', margin: '2px', border: '1px solid #555', maxWidth: '100%' }}>
                                         <CardImg onClick={() => {
                                             console.log('ClickFromIMGGame3');
                                         }} src={game3pix}>
                                         </CardImg>
-                                    </Button>
-                                </Card>
+                                    </IconButton>
+                                </Col>
                             </Row>
-
-
                         </Row>
+
                         <Row style={{ justifyItems: 'center', flex: "display", flexWrap: 'wrap-reverse' }}>
-                            <Col sm="8" style={{ backgroundColor: 'black' }}>
-                                <Card style={{ border: '1px solid #555', marginTop: '10px', marginBottom: '10px', backgroundColor: '#141414' }}>
+                            <Col sm="8" style={{ backgroundColor: 'black', padding: '2px' }}>
+                                <Card style={{ border: '1px solid #555', marginTop: '10px', marginBottom: '10px', backgroundColor: '#141414', width: '100%' }}>
                                     <span style={{ margin: '20px', marginBottom: '5px', fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>
                                         แทงบอลออนไลน์ UFABET ยูฟ่าเบท | UFABET.COM
                                     </span>
@@ -71,11 +76,13 @@ const Login = () => {
                                     ทุกท่านในการฝากถอนภายใน 5 นาที <br />
                                     </Label>
                                 </Card>
-                                <Card style={{ border: '1px solid #555', marginBottom: '10px', backgroundColor: '#141414' }}>
-                                    <img style={{ width:'100%' }} src={BannerHow}>
+
+                                <IconButton style={{ padding: '0px' }}>
+                                    <img style={{ objectFit: 'contain', width: '100%' }} src={BannerHow}>
                                     </img>
-                                </Card>
-                                <Card style={{ border: '1px solid #555', marginBottom: '10px', backgroundColor: '#141414' }}>
+                                </IconButton>
+
+                                <Card style={{ border: '1px solid #555', marginBottom: '10px', marginTop: '10px', backgroundColor: '#141414' }}>
 
                                     <span style={{ margin: '20px', marginBottom: '5px', fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>
                                         UFABETCN.COM (UFABET) พนันและแทงบอลออนไลน์ที่ดีที่สุด
@@ -115,25 +122,28 @@ const Login = () => {
                                     </Label>
                                 </Card>
                             </Col>
-                            <Col >
+                            <Col style={{ padding: '2px' }}>
                                 <LoginCard />
                             </Col>
                         </Row>
-                        <Col>
-                            <Row style={{ height: '35vh', backgroundColor: 'darkgoldenrod' }}>
-                                <h1>Promotion 1</h1>
-                            </Row>
-                            <Row style={{ height: '35vh', backgroundColor: 'darkred' }}>
-                                <h1>Promotion 2</h1>
-                            </Row>
-                            <Row style={{ height: '35vh', backgroundColor: 'deeppink' }}>
-                                <h1>Promotion 3</h1>
-                            </Row>
-                        </Col>
                     </Col>
                 </Row>
+                <Row style={{ padding: '5px', justifyContent: 'center' }}>
+                    <IconButton style={{ margin: '5px', padding: '0px', width: "100%" }}>
+                        <img src={promotion} alt="Promotion 1" style={{ padding: '0px', width: "100%", objectFit: 'contain' }}>
+                        </img>
+                    </IconButton>
+                    <IconButton style={{ margin: '5px', padding: '0px', width: "100%" }}>
+                        <img src={promotion} alt="Promotion 2" style={{ padding: '0px', width: "100%", objectFit: 'contain' }}>
+                        </img>
+                    </IconButton>
+                    <IconButton style={{ margin: '5px', padding: '0px', width: "100%" }}>
+                        <img src={promotion} alt="Promotion 3" style={{ padding: '0px', width: "100%", objectFit: 'contain' }}>
+                        </img>
+                    </IconButton>
+                </Row>
                 <Row>
-                    <Col>
+                    <Col style={{ margin: '0px', padding: '0px' }}>
                         <img style={{ width: '100%' }} src={BannerF}>
                         </img>
                     </Col>

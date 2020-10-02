@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Row, Container, Button, Card, Input, InputGroup, InputGroupAddon, InputGroupText, Form, Label } from 'reactstrap';
+import { IconButton } from '@material-ui/core';
+import addLine from '../img/lineaddfriend.png'
 
 
 const logincrad = () => {
 
     return (
         <div>
-            <Card style={{ padding: '5px', backgroundColor: 'black', border: '1px solid #555', justifyContent: 'center', alignItems: 'center', marginTop: '10px', marginBottom: '10px' }}>
+            <Card style={{ minWidth: '25vh', padding: '5px', backgroundColor: 'black', border: '1px solid #555', justifyContent: 'center', alignItems: 'center', marginTop: '10px', marginBottom: '10px' }}>
                 <span style={{ fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>LOGIN UFABET</span>
                 <Form style={{ justifyContent: 'center', alignItems: 'center', marginBottom: "10px", marginTop: '10px' }} method="post" action="https://www.ufa6666.com/Default8.aspx?lang=EN-GB">
                     <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="btnLogin" ></input>
@@ -27,7 +29,11 @@ const logincrad = () => {
                     </InputGroup>
                     <Button color="danger" type="submit" style={{ color: 'whitesmoke', backgroundColor: 'red', width: '100%', marginTop: '5px' }}>เข้าสู่ระบบ</Button>
                 </Form>
-                <Button color="sussces" style={{ color: 'whitesmoke', backgroundColor: 'green', Minwidth: "50%" }}>Add Friends</Button>
+                <IconButton style={{ padding: '0px' }}>
+                    <img src={addLine} style={{ minHeight:'10px',maxHeight:'30px', objectFit: 'contain' }}>
+                    </img>
+                </IconButton>
+
                 <span style={{ color: 'whitesmoke' }}>
                     PARTNER OF UFABET.COM
                 </span>
