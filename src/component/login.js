@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Row, Container, Button, Card, Input, InputGroup, InputGroupAddon, InputGroupText, Label, CardImg } from 'reactstrap';
+import { Col, Row, Container, Button, Card, Input, InputGroup, InputGroupAddon, InputGroupText, Label, CardImg, Navbar } from 'reactstrap';
 import LoginCard from './logincard'
 import BannerF from '../img/banner-footer.jpg'
+import BannerHow from '../img/how.jpg'
 import game1pix from '../img/game1.jpg'
 import game2pix from '../img/game2.jpg'
 import game3pix from '../img/game3.jpg'
@@ -18,25 +19,36 @@ const Login = () => {
                 </Row>
                 <Row>
                     <Col style={{ backgroundColor: 'black', height: '100%' }}>
-                        <Row style={{ flex: 'display', alignItems: 'center', justifyContent: 'center', backgroundColor: 'gold', height: '15vh' }}>
-                            <Col xs="4" >
-                                <Card style={{ border: '1px solid #555' }}>
-                                    <CardImg src={game1pix}>
-                                    </CardImg>
+                        <Row style={{ backgroundColor: 'gold', paddingTop: '5px', paddingBottom: '5px', flex: 'display', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', }}>
+                            <Row style={{ width: '100%', backgroundColor: 'darkgoldenrod', flex: 'display', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', }}>
+                                <Card style={{ margin: '5px', border: '1px solid #555', minWidth: '12vh', width: '30%' }}>
+                                    <Button style={{ padding: '0px' }}>
+                                        <CardImg onClick={() => {
+                                            console.log('ClickFromIMGGame1');
+                                        }} src={game1pix}>
+                                        </CardImg>
+                                    </Button>
                                 </Card>
-                            </Col>
-                            <Col xs="4" >
-                                <Card style={{ border: '1px solid #555' }}>
-                                    <CardImg src={game2pix}>
-                                    </CardImg>
+
+                                <Card style={{ margin: '5px', border: '1px solid #555', minWidth: '12vh', width: '30%' }}>
+                                    <Button style={{ padding: '0px' }}>
+                                        <CardImg onClick={() => {
+                                            console.log('ClickFromIMGGame2');
+                                        }} src={game2pix}>
+                                        </CardImg>
+                                    </Button>
                                 </Card>
-                            </Col>
-                            <Col xs="4" >
-                                <Card style={{ border: '1px solid #555' }}>
-                                    <CardImg src={game3pix}>
-                                    </CardImg>
+
+                                <Card style={{ margin: '5px', border: '1px solid #555', minWidth: '12vh', width: '30%' }}>
+                                    <Button style={{ padding: '0px' }}>
+                                        <CardImg onClick={() => {
+                                            console.log('ClickFromIMGGame3');
+                                        }} src={game3pix}>
+                                        </CardImg>
+                                    </Button>
                                 </Card>
-                            </Col>
+                            </Row>
+
 
                         </Row>
                         <Row style={{ justifyItems: 'center', flex: "display", flexWrap: 'wrap-reverse' }}>
@@ -59,10 +71,9 @@ const Login = () => {
                                     ทุกท่านในการฝากถอนภายใน 5 นาที <br />
                                     </Label>
                                 </Card>
-                                <Card style={{ border: '1px solid #555', marginBottom: '10px', height: '18vh', backgroundColor: '#141414' }}>
-                                    <span style={{ color: 'whitesmoke' }}>
-                                        ขั้นตอน
-                                    </span>
+                                <Card style={{ border: '1px solid #555', marginBottom: '10px', backgroundColor: '#141414' }}>
+                                    <img style={{ width:'100%' }} src={BannerHow}>
+                                    </img>
                                 </Card>
                                 <Card style={{ border: '1px solid #555', marginBottom: '10px', backgroundColor: '#141414' }}>
 
@@ -88,20 +99,19 @@ const Login = () => {
                                         ลิ้งเข้าระบบ ufabet รองอื่นๆอีกมากมาย เช่น www.ufabet9999.com, www.ufabet7777.com, www.ufabet6666.com เป็นต้น<br />
                                         <br />
                                         สมัคร ufabet ออนไลน์ กับเว็บไซต์ยอดนิยม เช่น ยูฟ่าเบท88888, ยูฟ่าเบท168, ยูฟ่าเบท365, ยูฟ่าเบท777, ยูฟ่า191 และ ยูฟ่า168
-                                        หรือคุณสามารถ สมัครยูฟ่า เพื่อเล่น คาสิโนออนไลน์ บาคาร่า สล๊อต แทงบอลออนไลน์ หรือ กีฬาอื่นๆ www.ufabet.com เริ่มเดิมพัน พันออนไลน์ มั่นคงปลอดภัย<br />
+                                        หรือคุณสามารถ สมัครยูฟ่า เพื่อเล่น คาสิโนออนไลน์ บาคาร่า สล๊อต แทงบอลออนไลน์ หรือ กีฬาอื่นๆ www.ufabet.com เริ่มเดิมพัน พันออนไลน์ มั่นคงปลอดภัย
                                     </Label>
                                     <span style={{ margin: '20px', marginBottom: '5px', fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>
                                         สมัครบาคาร่า 888 ufabet สมัครเว็บบาคาร่า 1688
                                     </span>
                                     <Label style={{ margin: '20px', marginTop: '5px', color: 'whitesmoke' }}>
-                                        สมัครบาคาร่า เกมส์คาสิโนออนไลน์ กับ ufabet.com เว็บคาสิโนยอดนิยมที่ได้รับการยอมรับจากทั่วโลก ถ้าคุณเคย สมัครเว็บบาคาร่า อื่นๆมาแล้ว อาทิเช่น สมัคร Gclub ก็ไม่ยากเลยที่จะลองมา สมัครเล่นบาคาร่า กับยูฟ่าเบท ซึ่งมีเกมส์ไพ่ในรูปแบบต่างๆให้ได้เลือกเล่นมากมาย เช่น Sexy Baccarat ซึ่งคนแจกไพ่จะแต่งตัวเซ็กซี่ และมีท่าเต้นที่สนุกสนานช่วยเพิ่มความเพลิดเพลินและเพิ่มสีสันในการเล่น<br />
-                                        <br />
+                                        สมัครบาคาร่า เกมส์คาสิโนออนไลน์ กับ ufabet.com เว็บคาสิโนยอดนิยมที่ได้รับการยอมรับจากทั่วโลก ถ้าคุณเคย สมัครเว็บบาคาร่า อื่นๆมาแล้ว อาทิเช่น สมัคร Gclub ก็ไม่ยากเลยที่จะลองมา สมัครเล่นบาคาร่า กับยูฟ่าเบท ซึ่งมีเกมส์ไพ่ในรูปแบบต่างๆให้ได้เลือกเล่นมากมาย เช่น Sexy Baccarat ซึ่งคนแจกไพ่จะแต่งตัวเซ็กซี่ และมีท่าเต้นที่สนุกสนานช่วยเพิ่มความเพลิดเพลินและเพิ่มสีสันในการเล่น
                                     </Label>
                                     <span style={{ margin: '20px', marginBottom: '5px', fontSize: '20px', fontWeight: 'bold', color: "#d6b318" }}>
                                         สมัคร ufabet เว็บแทงบอล vip 888 โปรโมชั่น ดี คืนยอดเสีย ทุกเดือน
                                     </span>
                                     <Label style={{ margin: '20px', marginTop: '5px', color: 'whitesmoke' }}>
-                                        นอกจากนี้เว็บ ufabetcn ยังเป็นตัวแทนที่ได้รับการแต่งตั้งจาก UFABET เช่นเดียวกับเว็บอื่นๆในเครือเช่น UFABET365, UFA168, UFABET168, UFA1688, UFA888, UFA69, UFABET888, UFA678, UFABET777, UFABET888, UFA9999, UFA7777, UFA191 เป็นต้น เรามีโปรโมชั่น ufabet คืนยอดเสีย 5% ทุกวันที่ 1 ของทุกเดือน <br />
+                                        นอกจากนี้เว็บ ufabetcn ยังเป็นตัวแทนที่ได้รับการแต่งตั้งจาก UFABET เช่นเดียวกับเว็บอื่นๆในเครือเช่น UFABET365, UFA168, UFABET168, UFA1688, UFA888, UFA69, UFABET888, UFA678, UFABET777, UFABET888, UFA9999, UFA7777, UFA191 เป็นต้น เรามีโปรโมชั่น ufabet คืนยอดเสีย 5% ทุกวันที่ 1 ของทุกเดือน
                                     </Label>
                                 </Card>
                             </Col>
@@ -123,8 +133,9 @@ const Login = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{ backgroundImage: `url(${BannerF})`, minHeight: '6vh' }}>
-
+                    <Col>
+                        <img style={{ width: '100%' }} src={BannerF}>
+                        </img>
                     </Col>
                 </Row>
             </Container >
