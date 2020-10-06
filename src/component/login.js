@@ -6,19 +6,16 @@ import BannerHow from '../img/how.jpg'
 import game1pix from '../img/game1.jpg'
 import game2pix from '../img/game2.jpg'
 import game3pix from '../img/game3.jpg'
-import promotion from '../img/Promotion.jpg'
+import promotion1 from '../img/Promotion1.png'
+import promotion2 from '../img/Promotion2.png'
+import promotion3 from '../img/Promotion3.png'
 import IconButton from '@material-ui/core/IconButton'
 
 const Login = () => {
 
     return (
-        <div style={{ backgroundColor: 'black' }} >
-            <Container fluid={true} style={{ maxWidth: '100vh' }}>
-                <Row style={{ backgroundColor: 'black', height: '23vh' }}>
-                    <Col style={{ marginTop: '20px' }}>
-                        <h1 style={{ color: 'red' }}>Header</h1>
-                    </Col>
-                </Row>
+        <div style={{ backgroundColor: 'black', paddingTop: '370px' }} >
+            <Container fluid={true} style={{ maxWidth: '100vh', backgroundColor: 'black' }}>
                 <Row>
                     <Col style={{ backgroundColor: 'black', height: '100%' }}>
                         <Row style={{
@@ -130,15 +127,15 @@ const Login = () => {
                 </Row>
                 <Row style={{ padding: '5px', justifyContent: 'center' }}>
                     <IconButton style={{ margin: '5px', padding: '0px', width: "100%" }}>
-                        <img src={promotion} alt="Promotion 1" style={{ padding: '0px', width: "100%", objectFit: 'contain' }}>
+                        <img src={promotion1} alt="Promotion 1" style={{ padding: '0px', width: "100%", objectFit: 'contain' }}>
                         </img>
                     </IconButton>
                     <IconButton style={{ margin: '5px', padding: '0px', width: "100%" }}>
-                        <img src={promotion} alt="Promotion 2" style={{ padding: '0px', width: "100%", objectFit: 'contain' }}>
+                        <img src={promotion2} alt="Promotion 2" style={{ padding: '0px', width: "100%", objectFit: 'contain' }}>
                         </img>
                     </IconButton>
                     <IconButton style={{ margin: '5px', padding: '0px', width: "100%" }}>
-                        <img src={promotion} alt="Promotion 3" style={{ padding: '0px', width: "100%", objectFit: 'contain' }}>
+                        <img src={promotion3} alt="Promotion 3" style={{ padding: '0px', width: "100%", objectFit: 'contain' }}>
                         </img>
                     </IconButton>
                 </Row>
