@@ -28,7 +28,7 @@ import sidepro3 from "../img/sidepro3.png";
 import IconButton from "@material-ui/core/IconButton";
 import Media from "react-media";
 
-const Login = () => {
+const promotion = () => {
   return (
     <div style={{ backgroundColor: "black" }}>
       <Media
@@ -73,7 +73,6 @@ const Login = () => {
                         }}
                       >
                         <IconButton
-                          href="/casino"
                           style={{
                             padding: "0px",
                             margin: "2px",
@@ -90,7 +89,6 @@ const Login = () => {
                         </IconButton>
 
                         <IconButton
-                          href="/sport"
                           style={{
                             padding: "0px",
                             margin: "2px",
@@ -106,7 +104,6 @@ const Login = () => {
                           ></CardImg>
                         </IconButton>
                         <IconButton
-                          href="/game"
                           style={{
                             padding: "0px",
                             margin: "2px",
@@ -150,7 +147,7 @@ const Login = () => {
                               color: "#d6b318",
                             }}
                           >
-                            แทงบอลออนไลน์ UFABET ยูฟ่าเบท | UFABET.COM
+                            UFABET ยูฟ่าเบท | UFABET.COM PROMOTION
                           </span>
                           <Label
                             style={{
@@ -184,10 +181,7 @@ const Login = () => {
                           </Label>
                         </Card>
 
-                        <IconButton
-                          href="https://lin.ee/9gF9r1T"
-                          style={{ padding: "0px" }}
-                        >
+                        <IconButton style={{ padding: "0px" }}>
                           <img
                             style={{ objectFit: "contain", width: "100%" }}
                             src={BannerHow}
@@ -353,7 +347,6 @@ const Login = () => {
                 </Row>
                 <Row style={{ padding: "5px", justifyContent: "center" }}>
                   <IconButton
-                    href="https://lin.ee/9gF9r1T"
                     style={{ margin: "5px", padding: "0px", width: "100%" }}
                   >
                     <img
@@ -367,7 +360,6 @@ const Login = () => {
                     ></img>
                   </IconButton>
                   <IconButton
-                    href="https://lin.ee/9gF9r1T"
                     style={{ margin: "5px", padding: "0px", width: "100%" }}
                   >
                     <img
@@ -381,7 +373,6 @@ const Login = () => {
                     ></img>
                   </IconButton>
                   <IconButton
-                    href="https://lin.ee/9gF9r1T"
                     style={{ margin: "5px", padding: "0px", width: "100%" }}
                   >
                     <img
@@ -430,7 +421,6 @@ const Login = () => {
                       >
                         <Col md="4" style={{ padding: "0px" }}>
                           <IconButton
-                            href="/casino"
                             style={{
                               padding: "0px",
                               margin: "2px",
@@ -448,7 +438,6 @@ const Login = () => {
                         </Col>
                         <Col md="4" style={{ padding: "0px" }}>
                           <IconButton
-                            href="/sport"
                             style={{
                               padding: "0px",
                               margin: "2px",
@@ -466,7 +455,6 @@ const Login = () => {
                         </Col>
                         <Col md="4" style={{ padding: "0px" }}>
                           <IconButton
-                            href="/game"
                             style={{
                               padding: "0px",
                               margin: "2px",
@@ -514,7 +502,7 @@ const Login = () => {
                               color: "#d6b318",
                             }}
                           >
-                            แทงบอลออนไลน์ UFABET ยูฟ่าเบท | UFABET.COM
+                            UFABET ยูฟ่าเบท | UFABET.COM PROMOTION
                           </span>
                           <Label
                             style={{
@@ -548,10 +536,7 @@ const Login = () => {
                           </Label>
                         </Card>
 
-                        <IconButton
-                          href="https://lin.ee/9gF9r1T"
-                          style={{ padding: "0px" }}
-                        >
+                        <IconButton style={{ padding: "0px" }}>
                           <img
                             style={{ objectFit: "contain", width: "100%" }}
                             src={BannerHow}
@@ -575,8 +560,7 @@ const Login = () => {
                               color: "#d6b318",
                             }}
                           >
-                            UFABETCN.COM (UFABET)
-                            พนันและแทงบอลออนไลน์ที่ดีที่สุด
+                            UFABETCN.COM (UFABET) PROMOTION
                           </span>
                           <Label
                             style={{
@@ -714,13 +698,13 @@ const Login = () => {
                       </Col>
                       <Col style={{ padding: "2px" }}>
                         <LoginCard />
-                        <IconButton href="https://lin.ee/9gF9r1T">
+                        <IconButton>
                           <img src={sidepro1} style={{ width: "100%" }}></img>
                         </IconButton>
-                        <IconButton href="https://lin.ee/9gF9r1T">
+                        <IconButton>
                           <img src={sidepro2} style={{ width: "100%" }}></img>
                         </IconButton>
-                        <IconButton href="https://lin.ee/9gF9r1T">
+                        <IconButton>
                           <img src={sidepro3} style={{ width: "100%" }}></img>
                         </IconButton>
                       </Col>
@@ -729,7 +713,6 @@ const Login = () => {
                 </Row>
                 <Row style={{ padding: "5px", justifyContent: "center" }}>
                   <IconButton
-                    href="https://lin.ee/9gF9r1T"
                     style={{ margin: "5px", padding: "0px", width: "100%" }}
                   >
                     <img
@@ -743,7 +726,6 @@ const Login = () => {
                     ></img>
                   </IconButton>
                   <IconButton
-                    href="https://lin.ee/9gF9r1T"
                     style={{ margin: "5px", padding: "0px", width: "100%" }}
                   >
                     <img
@@ -757,7 +739,6 @@ const Login = () => {
                     ></img>
                   </IconButton>
                   <IconButton
-                    href="https://lin.ee/9gF9r1T"
                     style={{ margin: "5px", padding: "0px", width: "100%" }}
                   >
                     <img
@@ -785,4 +766,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default promotion;

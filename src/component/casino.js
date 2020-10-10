@@ -28,7 +28,7 @@ import sidepro3 from "../img/sidepro3.png";
 import IconButton from "@material-ui/core/IconButton";
 import Media from "react-media";
 
-const Login = () => {
+const promotion = () => {
   return (
     <div style={{ backgroundColor: "black" }}>
       <Media
@@ -150,7 +150,7 @@ const Login = () => {
                               color: "#d6b318",
                             }}
                           >
-                            แทงบอลออนไลน์ UFABET ยูฟ่าเบท | UFABET.COM
+                            UFABET ยูฟ่าเบท | UFABET.COM PROMOTION
                           </span>
                           <Label
                             style={{
@@ -184,10 +184,7 @@ const Login = () => {
                           </Label>
                         </Card>
 
-                        <IconButton
-                          href="https://lin.ee/9gF9r1T"
-                          style={{ padding: "0px" }}
-                        >
+                        <IconButton style={{ padding: "0px" }}>
                           <img
                             style={{ objectFit: "contain", width: "100%" }}
                             src={BannerHow}
@@ -381,10 +378,10 @@ const Login = () => {
                     ></img>
                   </IconButton>
                   <IconButton
-                    href="https://lin.ee/9gF9r1T"
                     style={{ margin: "5px", padding: "0px", width: "100%" }}
                   >
                     <img
+                      href="https://lin.ee/9gF9r1T"
                       src={promotion3}
                       alt="Promotion 3"
                       style={{
@@ -514,7 +511,7 @@ const Login = () => {
                               color: "#d6b318",
                             }}
                           >
-                            แทงบอลออนไลน์ UFABET ยูฟ่าเบท | UFABET.COM
+                            UFABET ยูฟ่าเบท | UFABET.COM PROMOTION
                           </span>
                           <Label
                             style={{
@@ -548,10 +545,7 @@ const Login = () => {
                           </Label>
                         </Card>
 
-                        <IconButton
-                          href="https://lin.ee/9gF9r1T"
-                          style={{ padding: "0px" }}
-                        >
+                        <IconButton style={{ padding: "0px" }}>
                           <img
                             style={{ objectFit: "contain", width: "100%" }}
                             src={BannerHow}
@@ -575,8 +569,7 @@ const Login = () => {
                               color: "#d6b318",
                             }}
                           >
-                            UFABETCN.COM (UFABET)
-                            พนันและแทงบอลออนไลน์ที่ดีที่สุด
+                            UFABETCN.COM (UFABET) PROMOTION
                           </span>
                           <Label
                             style={{
@@ -714,13 +707,13 @@ const Login = () => {
                       </Col>
                       <Col style={{ padding: "2px" }}>
                         <LoginCard />
-                        <IconButton href="https://lin.ee/9gF9r1T">
+                        <IconButton>
                           <img src={sidepro1} style={{ width: "100%" }}></img>
                         </IconButton>
-                        <IconButton href="https://lin.ee/9gF9r1T">
+                        <IconButton>
                           <img src={sidepro2} style={{ width: "100%" }}></img>
                         </IconButton>
-                        <IconButton href="https://lin.ee/9gF9r1T">
+                        <IconButton>
                           <img src={sidepro3} style={{ width: "100%" }}></img>
                         </IconButton>
                       </Col>
@@ -785,4 +778,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default promotion;

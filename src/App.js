@@ -2,11 +2,16 @@ import React, { Fragment, useState } from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Login from "./component/login";
+import Promotion from "./component/promotion";
+import Sport from "./component/sport";
+import Casino from "./component/casino";
+import Game from "./component/game";
 import ScrollToTop from "./component/ScrollToTop";
 import menubanner from "./img/menubar.png";
 import headermin from "./img/header-min.jpg";
 import { Row, Col, Navbar, Nav, NavLink, Container, Button } from "reactstrap";
 import Media from "react-media";
+import { IconButton } from "@material-ui/core";
 
 const App = () => {
   return (
@@ -36,7 +41,7 @@ const App = () => {
                     }}
                   >
                     <NavLink
-                      href="#"
+                      href="https://lin.ee/9gF9r1T"
                       style={{
                         padding: "0px",
                         margin: "0px",
@@ -93,7 +98,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="/"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -108,7 +113,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="https://lin.ee/9gF9r1T"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -123,7 +128,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="/promotion"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -258,7 +263,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="https://lin.ee/9gF9r1T"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -287,7 +292,9 @@ const App = () => {
                       alignItems: "center",
                     }}
                   >
-                    <img src={headermin} style={{ width: "100%" }}></img>
+                    <a href="https://lin.ee/9gF9r1T">
+                      <img src={headermin} style={{ width: "100%" }}></img>
+                    </a>
                   </Col>
                   <Nav
                     style={{
@@ -297,7 +304,7 @@ const App = () => {
                     }}
                   >
                     <NavLink
-                      href="#"
+                      href="https://www.ufabet.com/"
                       style={{
                         padding: "0px",
                         margin: "0px",
@@ -308,7 +315,7 @@ const App = () => {
                       UFABET
                     </NavLink>
                     <NavLink
-                      href="#"
+                      href="https://lin.ee/9gF9r1T"
                       style={{
                         padding: "0px",
                         margin: "0px",
@@ -319,7 +326,7 @@ const App = () => {
                       สมัคร UFABET
                     </NavLink>
                     <NavLink
-                      href="#"
+                      href="/"
                       style={{
                         padding: "0px",
                         margin: "0px",
@@ -343,12 +350,14 @@ const App = () => {
                         padding: "0px",
                       }}
                     >
-                      <img
-                        src={menubanner}
-                        style={{
-                          width: "100%",
-                        }}
-                      ></img>
+                      <a href="https://www.ufabet.com/">
+                        <img
+                          src={menubanner}
+                          style={{
+                            width: "100%",
+                          }}
+                        ></img>
+                      </a>
                       <Row
                         style={{
                           justifyContent: "center",
@@ -359,7 +368,7 @@ const App = () => {
                       >
                         <Button
                           color="warning"
-                          href="#"
+                          href="/"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -374,7 +383,7 @@ const App = () => {
                         </Button>
                         <Button
                           color="warning"
-                          href="#"
+                          href="https://lin.ee/9gF9r1T"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -389,7 +398,7 @@ const App = () => {
                         </Button>
                         <Button
                           color="warning"
-                          href="#"
+                          href="/promotion"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -548,7 +557,7 @@ const App = () => {
                         </Button>
                         <Button
                           color="warning"
-                          href="#"
+                          href="https://lin.ee/9gF9r1T"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -572,6 +581,10 @@ const App = () => {
 
         <Switch>
           <Route exact path="/" component={Login} />
+          <Route exact path="/promotion" component={Promotion} />
+          <Route exact path="/sport" component={Sport} />
+          <Route exact path="/casino" component={Casino} />
+          <Route exact path="/game" component={Game} />
         </Switch>
       </Router>
     </div>
