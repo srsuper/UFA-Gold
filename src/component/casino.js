@@ -707,13 +707,13 @@ const promotion = () => {
                       </Col>
                       <Col style={{ padding: "2px" }}>
                         <LoginCard />
-                        <IconButton>
+                        <IconButton href="https://lin.ee/9gF9r1T">
                           <img src={sidepro1} style={{ width: "100%" }}></img>
                         </IconButton>
-                        <IconButton>
+                        <IconButton href="https://lin.ee/9gF9r1T">
                           <img src={sidepro2} style={{ width: "100%" }}></img>
                         </IconButton>
-                        <IconButton>
+                        <IconButton href="https://lin.ee/9gF9r1T">
                           <img src={sidepro3} style={{ width: "100%" }}></img>
                         </IconButton>
                       </Col>
