@@ -4,7 +4,10 @@ import "./App.css";
 import Login from "./component/login";
 import Promotion from "./component/promotion";
 import Sport from "./component/sport";
+import Slot from "./component/slot";
 import Casino from "./component/casino";
+import Aicasino from "./component/aicasino";
+import Aiball from "./component/aiball";
 import Game from "./component/game";
 import ScrollToTop from "./component/ScrollToTop";
 import menubanner from "./img/menubar.png";
@@ -158,7 +161,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="/casino"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -188,7 +191,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="/slot"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -218,7 +221,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="/aiball"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -233,7 +236,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="/aicasino"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -248,7 +251,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="https://www.xn--l3cmpqi1c5c0a.com/"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -258,7 +261,7 @@ const App = () => {
                             fontSize: "15px",
                           }}
                         >
-                          ทายผลบอล
+                          ดูบอลออนไลน์
                         </Button>
                         <Button
                           outline
@@ -436,7 +439,7 @@ const App = () => {
                         </Button>
                         <Button
                           color="warning"
-                          href="#"
+                          href="/casino"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -474,7 +477,7 @@ const App = () => {
                       >
                         <Button
                           color="warning"
-                          href="#"
+                          href="/slot"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -504,7 +507,7 @@ const App = () => {
                         </Button>
                         <Button
                           color="warning"
-                          href="#"
+                          href="/aiball"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -527,7 +530,7 @@ const App = () => {
                       >
                         <Button
                           color="warning"
-                          href="#"
+                          href="/aicasino"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -542,7 +545,7 @@ const App = () => {
                         </Button>
                         <Button
                           color="warning"
-                          href="#"
+                          href="https://www.xn--l3cmpqi1c5c0a.com/"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -553,7 +556,7 @@ const App = () => {
                             height: "36px",
                           }}
                         >
-                          ทายผลบอล
+                          ดูบอลออนไลน์
                         </Button>
                         <Button
                           color="warning"
@@ -583,8 +586,11 @@ const App = () => {
           <Route exact path="/" component={Login} />
           <Route exact path="/promotion" component={Promotion} />
           <Route exact path="/sport" component={Sport} />
+          <Route exact path="/slot" component={Slot} />
           <Route exact path="/casino" component={Casino} />
           <Route exact path="/game" component={Game} />
+          <Route exact path="/aicasino" component={Aicasino} />
+          <Route exact path="/aiball" component={Aiball} />
         </Switch>
       </Router>
     </div>

@@ -341,17 +341,43 @@ const promotion = () => {
                             width: "100%",
                           }}
                         >
+                          <Row
+                            style={{
+                              marginBottom: "5px",
+                              padding: "0px",
+                              margin: "0px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                width: "1%",
+                                backgroundColor: "gold",
+                              }}
+                            ></span>
+                            <span
+                              style={{
+                                width: "99%",
+                                backgroundColor: "whitesmoke",
+                                fontFamily: "Mitr",
+                                fontSize: "20px",
+                                fontWeight: "bold",
+                                color: "black",
+                              }}
+                            >
+                              กีฬาออนไลน์
+                            </span>
+                          </Row>
                           <span
                             style={{
                               margin: "20px",
                               marginBottom: "5px",
                               fontFamily: "Mitr",
-                              fontSize: "20px",
+                              fontSize: "16px",
                               fontWeight: "bold",
                               color: "#d6b318",
                             }}
                           >
-                            โปรโมชั่น UFABET
+                            ฟุตบอล
                           </span>
                           <Label
                             style={{
@@ -363,10 +389,260 @@ const promotion = () => {
                               fontWeight: "lighter",
                             }}
                           >
-                            โปรโมชั่น UFABET ตอบโจทย์สำหรับนักเล่นโดยเฉพาะกับ
-                            สองโปรมาแรงที่สุดตั้งแต่เราเคยทำมา กับโปรโมชั่นถูกใจ
-                            เพิ่ม 10% ทุกยอดฝาก ไม่มีใครให้มากกว่าเรา
-                            ยูฟ่าเบทที่นี่ทีเดียว เล่นกับเรามีแต่ได้
+                            – ราคาต่อรอง & สูงต่ำ <br /> – คี่/คู่ & ประตูรวม{" "}
+                            <br />– 1X2 & สองโอกาส <br />– ทายผลสกอร์ <br />–
+                            ครึ่งเวลา / เต็มเวลา <br />– ประตูแรก / ประตูสุดท้าย{" "}
+                            <br />– มิกซ์ พาร์เลย์ <br />– ทายผลผู้ชนะ
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            บาสเกตบอล
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br /> – มิกซ์ พาร์เลย์ <br />
+                            – ทายผลผู้ชนะ <br />
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            เบสบอล
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br /> – มิกซ์ พาร์เลย์ <br />
+                            – ทายผลผู้ชนะ <br />
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            เทนนิส
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br /> – มิกซ์ พาร์เลย์ <br />
+                            – ทายผลผู้ชนะ <br />
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            อเมริกันฟุตบอล
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br /> – มิกซ์ พาร์เลย์ <br />
+                            – ทายผลผู้ชนะ <br />
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            ฮอกกี้น้ำแข็ง
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br /> – มิกซ์ พาร์เลย์ <br />
+                            – ทายผลผู้ชนะ <br />
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            ฮอกกี้น้ำแข็ง
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br /> – มิกซ์ พาร์เลย์ <br />
+                            – ทายผลผู้ชนะ <br />
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            แข่งรถ
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br />
+                            – ทายผลผู้ชนะ <br />
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            แฮนด์บอล
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br /> – มิกซ์ พาร์เลย์ <br />
+                            – ทายผลผู้ชนะ <br />
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            แบดมินตัน
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br />
+                            – ทายผลผู้ชนะ <br />
+                          </Label>
+                          <span
+                            style={{
+                              margin: "20px",
+                              marginBottom: "5px",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "bold",
+                              color: "#d6b318",
+                            }}
+                          >
+                            วอลเลย์บอล
+                          </span>
+                          <Label
+                            style={{
+                              margin: "20px",
+                              marginTop: "5px",
+                              color: "whitesmoke",
+                              fontFamily: "Mitr",
+                              fontSize: "16px",
+                              fontWeight: "lighter",
+                            }}
+                          >
+                            – ราคาต่อรอง & สูงต่ำ <br />
+                            – ทายผลผู้ชนะ <br />
                           </Label>
                         </Card>
                         <Row
