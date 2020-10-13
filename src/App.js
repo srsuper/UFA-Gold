@@ -8,10 +8,14 @@ import Slot from "./component/slot";
 import Casino from "./component/casino";
 import Aicasino from "./component/aicasino";
 import Aiball from "./component/aiball";
+import Betball from "./component/betball";
+import Baccarat from "./component/baccarat";
+import Hilo from "./component/hilo";
 import Game from "./component/game";
 import ScrollToTop from "./component/ScrollToTop";
 import menubanner from "./img/menubar.png";
 import headermin from "./img/header-min.jpg";
+import lineat from "./img/line@.png";
 import { Row, Col, Navbar, Nav, NavLink, Container, Button } from "reactstrap";
 import Media from "react-media";
 import { IconButton } from "@material-ui/core";
@@ -19,6 +23,50 @@ import { IconButton } from "@material-ui/core";
 const App = () => {
   return (
     <div>
+      <Media queries={{ nomal: { minWidth: 991 } }}>
+        {(matches) => (
+          <Fragment>
+            {matches.nomal && (
+              <div
+                class="sticky"
+                style={{
+                  position: "fixed",
+                  flexDirection: "colum",
+                  zIndex: "11",
+                  top: "30%",
+                  right: "5px",
+                  width: "150px",
+                  textAlign: "center",
+                }}
+              >
+                <a href="https://lin.ee/9gF9r1T">
+                  <img
+                    src={lineat}
+                    alt="เพิ่มเพื่อน"
+                    width="100%"
+                    border="0"
+                  ></img>
+                </a>
+
+                <a
+                  href="https://lin.ee/9gF9r1T"
+                  style={{
+                    color: "whitesmoke",
+                    backgroundColor: "#57c42e",
+                    width: "100%",
+                    fontFamily: "Mitr",
+                    fontWeight: "inherit",
+                    fontSize: "13px",
+                  }}
+                >
+                  LIINE : @GOLD28
+                </a>
+              </div>
+            )}
+          </Fragment>
+        )}
+      </Media>
+
       <Router>
         <Media
           queries={{
@@ -32,6 +80,7 @@ const App = () => {
                 <div
                   class="sticky"
                   style={{
+                    width: "100%",
                     backgroundColor: "black",
                   }}
                 >
@@ -146,7 +195,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="/betball"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -176,7 +225,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="/baccarat"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -206,7 +255,7 @@ const App = () => {
                         <Button
                           outline
                           color="warning"
-                          href="#"
+                          href="/hilo"
                           style={{
                             color: "white",
                             border: "0px solid gray",
@@ -424,7 +473,7 @@ const App = () => {
                       >
                         <Button
                           color="warning"
-                          href="#"
+                          href="/betball"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -454,7 +503,7 @@ const App = () => {
                         </Button>
                         <Button
                           color="warning"
-                          href="#"
+                          href="/baccarat"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -492,7 +541,7 @@ const App = () => {
                         </Button>
                         <Button
                           color="warning"
-                          href="#"
+                          href="/hilo"
                           style={{
                             borderRadius: "0px",
                             border: "1px solid black",
@@ -591,6 +640,9 @@ const App = () => {
           <Route exact path="/game" component={Game} />
           <Route exact path="/aicasino" component={Aicasino} />
           <Route exact path="/aiball" component={Aiball} />
+          <Route exact path="/betball" component={Betball} />
+          <Route exact path="/baccarat" component={Baccarat} />
+          <Route exact path="/hilo" component={Hilo} />
         </Switch>
       </Router>
     </div>
